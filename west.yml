@@ -21,6 +21,8 @@ manifest:
   remotes:
     - name: upstream
       url-base: https://github.com/zephyrproject-rtos
+    - name: kasjer_hal
+      url-base:  https://github.com/kasjer
     - name: babblesim
       url-base: https://github.com/BabbleSim
 
@@ -209,8 +211,9 @@ manifest:
       groups:
         - hal
     - name: hal_renesas
+      remote: kasjer_hal
       path: modules/hal/renesas
-      revision: pull/14/head
+      revision: 8777c2b55844686dc0ec84e5efb4e37b91646cd5
       groups:
         - hal
     - name: hal_rpi_pico
