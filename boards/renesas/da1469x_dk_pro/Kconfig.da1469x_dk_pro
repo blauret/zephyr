@@ -5,3 +5,7 @@
 
 config BOARD_DA1469X_DK_PRO
 	select SOC_DA14699
+
+choice BT_HCI_BUS_TYPE
+	default BT_DA1469X if BT
+endchoice

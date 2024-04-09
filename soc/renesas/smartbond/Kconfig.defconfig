@@ -8,4 +8,11 @@ rsource "*/Kconfig.defconfig"
 config PINCTRL
 	default y
 
+config BT_WAIT_NOP
+	default y if BT
+
+
+config TEST_RANDOM_GENERATOR
+	default y if BT
+
 endif # SOC_FAMILY_RENESAS_SMARTBOND
